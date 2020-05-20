@@ -18,5 +18,9 @@ namespace RPPOONLV7
         {
             return VHSItem.Price * (1 + DVDTax);
         }
+        public double Visit(Book BookItem)
+        {
+            return BookItem.Price * (1 + BookTax);
+        }
     }
 }

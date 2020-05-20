@@ -18,7 +18,7 @@ namespace RPPOONLV7
         public float GetCPULoad()
         {
             float currentLoad = this.CPULoad;
-            if (currentLoad != this.previousCPULoad)
+            if (currentLoad > this.previousCPULoad * 1.1 || currentLoad < this.previousCPULoad * 0.9)
             {
                 this.Notify();
             }

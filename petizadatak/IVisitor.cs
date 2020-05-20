@@ -10,5 +10,6 @@ namespace RPPOONLV7
     {
         double Visit(DVD DVDItem);
         double Visit(VHS VHSItem);
+        double Visit(Book BookItem);
     }
 }

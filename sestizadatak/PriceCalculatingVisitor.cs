@@ -12,15 +12,15 @@ namespace RPPOONLV7
         {
             if (DVDItem.Type == DVDType.SOFTWARE)
                 return Double.NaN;
-            return DVDItem.Price * 0.1;
+            return DVDItem.Price + (DVDItem.Price * 0.1);
         }
         public double Visit(VHS VHSItem)
         {
-            return VHSItem.Price * 0.1;
+            return VHSItem.Price + (VHSItem.Price * 0.1);
         }
         public double Visit(Book BookItem)
         {
-            return BookItem.Price * 0.1;
+            return BookItem.Price + (BookItem.Price * 0.1);
         }
 
     }

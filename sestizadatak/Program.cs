@@ -17,6 +17,7 @@ namespace RPPOONLV7
             DVD OperatingSystem = new DVD("Windows 10", DVDType.SOFTWARE, 99.99);
             VHS Cartoon = new VHS("Snowwhite", 13.23);
 
+            Console.WriteLine(Cartoon.Accept(Buyer));
             Console.WriteLine(OperatingSystem.Accept(Buyer));
 
         }

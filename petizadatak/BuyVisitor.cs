@@ -10,6 +10,8 @@ namespace RPPOONLV7
     {
         private const double DVDTax = 0.18;
         private const double VHSTax = 0.10;
+        private const double BookTax = 0.07;
+
         public double Visit(DVD DVDItem)
         {
             return DVDItem.Price * (1 + DVDTax);
